@@ -1,0 +1,23 @@
+$background-color_1: aqua;
+
+.container-one {
+  text-align: center;
+
+  .btn {
+    width: 120px;
+    height: 28px;
+    margin: 20px;
+  }
+  .Box {
+    border: 2px solid black;
+    width: 700px;
+    height: 272px;
+    position: absolute;
+    right: 335px;
+	margin-top: 100px;
+  }
+  .active {
+    background-color: $background-color_1;
+    border: 1px solid;
+  }
+}

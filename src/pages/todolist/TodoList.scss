@@ -1,0 +1,59 @@
+$color_1: white;
+$background-color_1: purple;
+$background-color_2: black;
+$background-color_3: transparent;
+.container-fluid{
+	background-color: $background-color_1;
+	padding: 0px;
+	margin: 0px;
+.container-todo {
+  text-align: center;
+  margin: 50px 400px;
+  color: $color_1;
+
+  .search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 124px 38px;
+    border: 1px solid;
+    border-radius: 20px;
+    height: 35px;
+    padding: 5px 5px;
+    background-color: $background-color_2;
+  }
+  .input-value {
+    height: 15px;
+    border: 0px;
+    outline: none;
+    background-color: $background-color_3;
+    color: $color_1;
+  }
+  .todos {
+    margin: 10px 137px;
+    ul {
+      padding: 0px;
+    }
+  }
+  .todo {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    li {
+      list-style: none;
+    }
+  }
+  .fa-solid {
+    padding-left: 10px;
+    cursor: pointer;
+  }
+  .todoElement {
+    border: 1px solid white;
+    padding: 0px 10px;
+    border-radius: 15px;
+    color: $color_1;
+    background-color: $background-color_2;
+    margin: 20px 0px;
+  }
+}
+}

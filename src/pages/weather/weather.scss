@@ -1,0 +1,92 @@
+$font-family_1: "Kanit", sans-serif;
+$background-color_1: aqua;
+$background-color_2: #e6e6e6;
+
+.container-weather {
+  font-family: $font-family_1;
+
+  img {
+    width: 50px;
+    height: 40px;
+    background-color: $background-color_1;
+    border: 1px solid;
+    border-radius: 50%;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+    background-color: $background-color_2;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    h1 {
+      margin-left: 20px;
+    }
+  }
+ 
+    margin: 50px auto;
+    border: 0px solid;
+    border-radius: 5px;
+    width: 60%;
+    background-color: $background-color_2;
+
+  .input-data {
+    width: 50%;
+    margin: 20px 24%;
+    border: 0px;
+    border-radius: 2px;
+    padding: 5px;
+  }
+  .main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 150px;
+  }
+  .humidity-wind {
+    display: flex;
+    justify-content: space-between;
+  }
+  .temprature {
+    text-align: center;
+    font-size: 100px;
+    margin: 0px;
+  }
+  .city-name {
+    text-align: center;
+    font-size: 65px;
+    margin: 0px;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    left: 119px;
+  }
+  .weather {
+    text-align: center;
+    font-size: 26px;
+    margin: 0px;
+  }
+  .humidity {
+    > h4 {
+      margin-bottom: 0px;
+    }
+    > p {
+      margin: 0px;
+    }
+  }
+  .wind {
+    > h4 {
+      margin-bottom: 0px;
+    }
+    > p {
+      margin: 0px;
+    }
+  }
+  .error {
+    margin: 20px auto;
+    font-size: 30px;
+    text-align: center;
+  }
+}

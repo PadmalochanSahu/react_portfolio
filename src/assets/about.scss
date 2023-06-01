@@ -1,0 +1,38 @@
+$color_1: #42446e;
+
+.about {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  padding: 20px 100px;
+  .text {
+    font-size: 50px;
+  }
+  p {
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: -1px;
+    color: $color_1;
+  }
+
+  span {
+    background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  @media screen and (max-width: 500px) {
+    padding: 20px 50px;
+    .photo {
+      img {
+        width: 100%;
+      }
+    }
+    .text {
+      width: 100%;
+      p {
+        font-size: 30px;
+        text-align: center;
+      }
+    }
+  }
+}
