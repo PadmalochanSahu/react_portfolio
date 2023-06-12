@@ -1,22 +1,28 @@
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Main from './components/Main';
 import TodoList from './pages/todolist/TodoList';
 import WeatherApp from './pages/weather/WeatherApp';
 import NumberGame from './pages/numbergame/NumberGame';
 import Table from './pages/datatable/Table';
+import Signup from './pages/login/Signup';
+import Signin from './pages/login/Signin';
 
 function App() {
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter basename='/react_portfolio'>
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="todolist" element={<TodoList />} />
-        <Route path="weather" element={<WeatherApp />} />
-        <Route path="numbergame" element={<NumberGame />} />
-        <Route path="datatable" element={<Table />} />
+        <Route path="/todolist" element={<TodoList />} />
+        <Route path="/weather" element={<WeatherApp />} />
+        <Route path="/numbergame" element={<NumberGame />} />
+        <Route path="/datatable" element={<Table />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/signin" element={<Signin />} />
+        <Route path='/signup' element ={<Signup />} />
       </Routes>
     </BrowserRouter>
+    
     </>
   );
 }

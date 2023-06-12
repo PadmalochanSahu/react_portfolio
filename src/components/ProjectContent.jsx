@@ -3,6 +3,7 @@ import fetchdata from '../assets/images/fetchdata.avif';
 import numbergame from '../assets/images/numbergame.png';
 import reactFetch from '../assets/images/reactFetch.webp';
 import weather3 from '../assets/images/weather3.jpg';
+import form from '../assets/images/form.jpg';
 
 
 
@@ -59,6 +60,15 @@ const ProjectContent = [
         disc: 'In this the data is fetched from different APIs on request.',
         tech: 'HTML, CSS, React with Axios',
         preview: 'datatable',
+        code:'https://github.com/PadmalochanSahu/Fetch_Axios.git'
+    },
+    {   
+        key: 7,
+        image: form,
+        name: 'Log In', 
+        disc: 'log in page with sign up using material ui',
+        tech: 'MUI,React',
+        preview: 'signup',
         code:'https://github.com/PadmalochanSahu/Fetch_Axios.git'
     }
 ]
