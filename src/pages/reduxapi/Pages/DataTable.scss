@@ -1,29 +1,46 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: #e6e6e6;
+}
+
 .main{
     .navbar{
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
         padding: 0px 30px;
-        background-color: #e6e6e6;
+        background-color: #19A7CE;
+        height: 15vh;
+    }
+    .head h1{
+        color: white;
+        margin: 10px 0px 0px;
     }
     .btn{
         text-decoration: none;
         margin-left: 10px;
-        padding: 5px 10px;
-        border: 0px;
-        border-radius: 7px;
-        background-color: royalblue;
         color: white;
         cursor: pointer;
     }
-    table{
-        margin: 40px 30px;
+    .active{
+        border-bottom: 4px solid white;
+        padding: 0px 5px 6px 5px;
     }
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
+    table{
+        width: 80vw;
+        margin: 40px auto;
+    }
+    tr{
+        border: 0px;
+        padding: 10px;
+        border-radius: 2px;
+        background-color: white;
+        margin-bottom: 10px;
     }
     .table-data{
         padding: 10px;
+    }
+    .links{
+        margin: 20px 0px ;
     }
 }
