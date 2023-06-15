@@ -43,7 +43,7 @@ const AlbumData = () => {
             {state.data.album.album && state.data.album.album.map((e) => {
                 return(
                 <tr key={e.id}>
-                    <td>{e.id}</td>
+                    <td style={{textAlign: "center"}}>{e.id}</td>
                     <td>{e.title}</td>
                 </tr>
                 )
