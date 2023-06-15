@@ -70,6 +70,15 @@ const ProjectContent = [
         tech: 'MUI,React',
         preview: 'signup',
         code:'https://github.com/PadmalochanSahu/Fetch_Axios.git'
+    },
+    {   
+        key: 8,
+        image: form,
+        name: 'DataTable', 
+        disc: 'log in page with sign up using material ui',
+        tech: 'React,Redux,Axios',
+        preview: 'reduxtable',
+        code:'https://github.com/PadmalochanSahu/Fetch_Axios.git'
     }
 ]
  

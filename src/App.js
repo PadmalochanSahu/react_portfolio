@@ -6,6 +6,9 @@ import NumberGame from './pages/numbergame/NumberGame';
 import Table from './pages/datatable/Table';
 import Signup from './pages/login/Signup';
 import Signin from './pages/login/Signin';
+import DataTable from './pages/reduxapi/Pages/DataTable';
+import CommentData from './pages/reduxapi/Pages/CommentData';
+import AlbumData from './pages/reduxapi/Pages/AlbumData';
 
 function App() {
   return (
@@ -20,6 +23,10 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/signin" element={<Signin />} />
         <Route path='/signup' element ={<Signup />} />
+        <Route path='/reduxtable' element ={<DataTable />} />
+        <Route path='/comments' element ={ <CommentData />} />
+        <Route path='/post' element ={ <DataTable />} />
+        <Route path='/albums' element ={ <AlbumData />} />
       </Routes>
     </BrowserRouter>
     
