@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import './DataTable.scss';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchTodo } from '../Reducers/DataTableSlice';
+import { fetchTodo } from '../../../store/reducers/api/DataTableSlice';
 import { NavLink } from 'react-router-dom';
 
 const DataTable = () => {

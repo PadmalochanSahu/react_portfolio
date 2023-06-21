@@ -79,6 +79,15 @@ const ProjectContent = [
         tech: 'React,Redux,Axios',
         preview: 'reduxtable',
         code:'https://github.com/PadmalochanSahu/Fetch_Axios.git'
+    },
+    {   
+        key: 9,
+        image: todolist,
+        name: 'TodoList', 
+        disc: 'log in page with sign up using material ui',
+        tech: 'React,Redux',
+        preview: 'reduxtodo',
+        code:'https://github.com/PadmalochanSahu/Fetch_Axios.git'
     }
 ]
  

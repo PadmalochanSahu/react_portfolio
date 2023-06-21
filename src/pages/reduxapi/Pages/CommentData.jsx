@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { fetchComments } from "../Reducers/Comment";
+import { fetchComments } from "../../../store/reducers/api/Comment";
 import { useDispatch, useSelector } from "react-redux";
 
 

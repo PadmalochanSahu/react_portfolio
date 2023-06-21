@@ -9,6 +9,7 @@ import Signin from './pages/login/Signin';
 import DataTable from './pages/reduxapi/Pages/DataTable';
 import CommentData from './pages/reduxapi/Pages/CommentData';
 import AlbumData from './pages/reduxapi/Pages/AlbumData';
+import ReduxTodo from './pages/todo/ReduxTodo';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path='/comments' element ={ <CommentData />} />
         <Route path='/post' element ={ <DataTable />} />
         <Route path='/albums' element ={ <AlbumData />} />
+        <Route path='/reduxtodo' element ={ <ReduxTodo/>} />
       </Routes>
     </BrowserRouter>
     
