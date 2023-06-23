@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { fetchComments } from "../../../store/reducers/api/Comment";
+import { fetchComments } from "../../store/reducers/api/Comment";
 import { useDispatch, useSelector } from "react-redux";
 
 
@@ -12,10 +12,10 @@ const CommentData = () => {
     dispatch(fetchComments());
 },[dispatch],[])
 
-if(state.data.comment.isLoading){
+if(state.comment.isLoading){
     return <h1>Loading....</h1>
 }
-if(state.data.comment.isError){
+if(state.comment.isError){
     return <h1>Sorry!!  Can Not Load the Data</h1>
 }
 
@@ -47,7 +47,7 @@ if(state.data.comment.isError){
             </tr>
         </thead>
         <tbody>
-        {state.data.comment.comment && state.data.comment.comment.map((e) =>{
+        {state.comment.comment && state.comment.comment.map((e) =>{
                     return(
                         <tr key={e.id}>
                            <td style={{textAlign: "center"}}>{e.id}</td>

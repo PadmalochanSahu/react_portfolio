@@ -6,9 +6,9 @@ import NumberGame from './pages/numbergame/NumberGame';
 import Table from './pages/datatable/Table';
 import Signup from './pages/login/Signup';
 import Signin from './pages/login/Signin';
-import DataTable from './pages/reduxapi/Pages/DataTable';
-import CommentData from './pages/reduxapi/Pages/CommentData';
-import AlbumData from './pages/reduxapi/Pages/AlbumData';
+import DataTable from './pages/reduxapi/DataTable';
+import CommentData from './pages/reduxapi/CommentData';
+import AlbumData from './pages/reduxapi/AlbumData';
 import ReduxTodo from './pages/todo/ReduxTodo';
 
 function App() {

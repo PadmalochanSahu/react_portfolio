@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
-import { fetchAlbumData } from "../../../store/reducers/api/AlbumSlice";
+import { fetchAlbumData } from "../../store/reducers/api/AlbumSlice";
 
 const AlbumData = () => {
 
@@ -12,10 +12,10 @@ const AlbumData = () => {
         dispatch(fetchAlbumData());
     },[dispatch],[])
     
-    if(state.data.album.isLoading){
+    if(state.album.isLoading){
         return <h1>Loading....</h1>
     }
-    if(state.data.album.isError){
+    if(state.album.isError){
         return <h1>Sorry!!  Can Not Load the Data</h1>
     }
 
@@ -40,7 +40,7 @@ const AlbumData = () => {
           </tr>
         </thead>
         <tbody>
-            {state.data.album.album && state.data.album.album.map((e) => {
+            {state.album.album && state.album.album.map((e) => {
                 return(
                 <tr key={e.id}>
                     <td style={{textAlign: "center"}}>{e.id}</td>

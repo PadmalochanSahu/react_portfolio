@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import './DataTable.scss';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchTodo } from '../../../store/reducers/api/DataTableSlice';
+import { fetchTodo } from '../../store/reducers/api/DataTableSlice';
 import { NavLink } from 'react-router-dom';
 
 const DataTable = () => {
@@ -13,7 +13,7 @@ const DataTable = () => {
     },[dispatch],[])
     
 
-    if(state.data.post.isLoading){
+    if(state.post.isLoading){
         return <h1>Loading....</h1>
     }
     return(
@@ -37,7 +37,7 @@ const DataTable = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {state.data.post.post && state.data.post.post.map((e) => {
+                  {state.post.post && state.post.post.map((e) => {
                     return(
                     <tr key={e.id}>
                         <td style={{textAlign: "center"}}>{e.id}.</td>
