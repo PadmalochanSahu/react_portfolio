@@ -20,6 +20,7 @@ const ReduxTodo = () => {
   const dispatch = useDispatch();
 
   const handleAdd = (item) => {
+
     setSave("Add")
     if (save === "Add"){
     if (todo === "") {
@@ -33,6 +34,7 @@ const ReduxTodo = () => {
     }
   }else{
     dispatch(editTodo({...isEdit, name:todo}))
+    setTodo("")
   }
   };
 
@@ -61,6 +63,7 @@ const ReduxTodo = () => {
     setIsEdit(element[0])
     setTodo(element[0].name)
     setSave("Save")
+    // setTodo("")
   }
   const handleComplete = (index) => {
     dispatch(completeTodo(index));
